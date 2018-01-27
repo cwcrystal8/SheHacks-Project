@@ -5,10 +5,8 @@
     <meta charset="utf-8">
 
       <title>PoliFix</title>
-      <meta name="description" content="The HTML5 Herald">
-      <meta name="author" content="SitePoint">
 
-      <link rel="stylesheet" href="css/styles.css?v=1.0">
+      <link rel="stylesheet" type-"text/css" href="stylesheet.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,22 +15,22 @@
 
   <body>
     <script src="js/scripts.js"></script>
-    <div>
-      <h1>
-        PoliFix
-      </h1>
-      <h3>
+    <div id="name">
+      <p>
+        <a href="" style="font-size: 50px; color: LightSlateGray">PoliFix</a>
+      </p>
+      <p id="slogan">
         Promoting Honesty in Politics
-      </h3>
+      </p>
     </div>
     <div>
       <img src="cap.JPG">
     </div>
-    <div>
+    <div id="description">
       <h4>
         What is PoliFix?
       </h4>
-      <p>
+      <p id="descrip">
         PoliFix is a honesty-geared platform for interaction between politicians and their constituents.
         PoliFix gives a voice to all in the community, regardless of race, gender, social class, etc. To promote political
         awareness, citizens can anonymously vote on polls, participate in topic discussions, and view the accountability
@@ -42,6 +40,46 @@
     </div>
     <div>
       <img src="SheHacks Decal.jpg">
+    </div>
+    <div>
+      <table style="width:100%">
+        <tr>
+          <th>Log In</th>
+          <th>Sign Up</th>
+        </tr>
+        <tr>
+          <td style="width:50%">
+            <p>Already have an account? Sign in here!</p>
+            <form action="LogIn.java">
+            <fieldset id="logInInfo">
+              Username
+              <input type="text" value="Enter Username"><br>
+              Password&nbsp;
+              <input type="text" value="Enter Password"><br>
+            </fieldset>
+            <input type="submit">
+          </form>
+          </td>
+          <td>
+            <p>Don't have an account? Make one here!</p>
+            <form action="SignUp.java">
+              <fieldset id="citizen">Are you a resident of the United States (a.k.a. a Citizen)?<br>
+                <input type="button" value="I'm a Citizen!"><br>
+              </fieldset>
+              <fieldset id="politician">Are you a member of the legistlative branch in the U.S. government (a.k.a. a Politician)?<br>
+                <input type="button" value="I'm a Politician!"><br>
+              </fieldset>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <p><a href="">About Us</a></p>
+      <p><a href="">FAQ</a></p>
+      <p><a href="">Contact Us</a></p>
+      <p><a href=""></a></p>
+
     </div>
   </body>
 </html>

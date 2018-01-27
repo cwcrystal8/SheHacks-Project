@@ -1,0 +1,56 @@
+table {
+  	background: LightSkyBlue;
+}
+
+#description {
+  	background: LightSkyBlue;
+}
+
+#name {
+  text-decoration: none;
+  color: SlateGray;
+  background: LightSkyBlue;
+}
+
+#slogan {
+  color: White;
+  font-size: 20px;
+}
+
+div {
+  padding: 10px;
+}
+
+fieldset{
+  text-decoration: none;
+  decoration: none;
+  border-color: LightSkyBlue;
+}
+
+a {
+  text-decoration: none;
+  font-size: 
+}
+
+h4 {
+  color: SlateGray;
+  font-size: 30px;
+}
+
+th {
+  color: SlateGray;
+  font-size: 30px;
+}
+
+form{
+    color: White;
+}
+
+input {
+  color: LightSkyBlue;
+}
+
+#descrip {
+  color: White;
+  line-height: 2;
+}
