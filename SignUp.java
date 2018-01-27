@@ -45,15 +45,15 @@ public class SignUp{
     if (usernames.indexOf(username) != -1){
       try{
         File f = new File("names.txt");
-        FileReader r = new FileReader(f);
-        BufferedReader b = new BufferedReader(r);
+        FileWriter r = new FileWriter(f);
+        BufferedWriter b = new BufferedWriter(r);
         b.newLine();
         b.append(username);
         b.newLine();
         b.append(password);
         b.flush();
         b.close();
-        f.close();
+        r.close();
         return true;
       }
       catch(Exception e){
@@ -64,6 +64,7 @@ public class SignUp{
       System.out.println("This username has already been taken!");
       return false;
     }
+    return false;
 }
   public static void main(String[] args){
     System.out.println(addAccount("Bob","1234"));
