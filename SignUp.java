@@ -30,8 +30,6 @@ public class SignUp{
       }
       br.close();
       fr.close();
-      System.out.println("username: " + usernames.get(0));
-      System.out.println("password: "+passwords.get(0));
     }
     catch(Exception e){
       System.out.println("No such file exists");
@@ -42,15 +40,15 @@ public class SignUp{
 
   public static boolean addAccount(String username, String password){
     extractUserData();
-    if (usernames.indexOf(username) != -1){
+    if (usernames.indexOf(username) == -1){
       try{
         File f = new File("names.txt");
-        FileWriter r = new FileWriter(f);
+        FileWriter r = new FileWriter(f, true);
         BufferedWriter b = new BufferedWriter(r);
-        b.newLine();
         b.append(username);
         b.newLine();
         b.append(password);
+        b.newLine();
         b.flush();
         b.close();
         r.close();
@@ -68,5 +66,13 @@ public class SignUp{
 }
   public static void main(String[] args){
     System.out.println(addAccount("Bob","1234"));
+    System.out.println(addAccount("Kaitlin","123123123"));
+    System.out.println(addAccount("Maryann","ilikecookies"));
+    System.out.println(addAccount("Crystal","imhatemakingforms"));
+    System.out.println(addAccount("Joyce","stuyhacksqueen"));
+    System.out.println(addAccount("Taylor","rockstar"));
+    System.out.println(addAccount("Grace","kindsoul"));
+    System.out.println(addAccount("Shannon","Iball"));
+    System.out.println(addAccount("Shannon","1234"));
   }
 }
