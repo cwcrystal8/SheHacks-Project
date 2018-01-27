@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+      <title>PoliFix</title>
+      <meta name="description" content="The HTML5 Herald">
+      <meta name="author" content="SitePoint">
+
+      <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.main {
+    margin-left: 160px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  </head>
+
+  <body>
+    <script src="js/scripts.js"></script>
+
+<div class="sidenav">
+    <a href="#about">General Information</a>
+  <a href="#services">Poll History</a>
+  <a href="#clients">Discussion History</a>
+  <a href="#contact">News Feed</a>
+</div>
+
+<div class="main">
+  <div>
+    <h1>
+      PoliFix
+    </h1>
+    <h3>
+      Promoting Honesty in Politics
+    </h3>
+  </div>
+  <h5>Welcome, INSERT USERNAME HERE</h5>
+  <br>
+  <center><h3>Some quick facts</h3></center>
+  <p>You have answered THIS MANY polls.</p>
+  <p>You have left THIS MANY comments.</p>
+  <p>You are in alignment with your local politician on THIS MANY%</p>
+  <p></p>
+</div>
