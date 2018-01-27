@@ -2,3 +2,9 @@ Kate Johnson
 YES
 David Smith
 NO
+Sue Anthony
+NO
+Bertram Denise
+YES
+Elizabeth Schuyler
+NO
